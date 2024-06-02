@@ -1,0 +1,2 @@
+Kingston FURY Beast 16GB DDR4 PC4-25600 KF432C16BB^type^DDR4^memory^16^frequency^3200
+Team T-Create Expert 16ГБ DDR5 CTCCD516G6000HC4801^type^DDR5^memory^16^frequency^6000

@@ -1,0 +1,2 @@
+WD Caviar Blue 1TB (WD10EZEX)^memory^1^writeSpeed^150
+Samsung 980 1TB MZ-V8V1T0BW^memory^1^writeSpeed^3500

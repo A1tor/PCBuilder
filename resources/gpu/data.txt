@@ -1,0 +1,2 @@
+Palit GeForce RTX 4060 Dual OC NE64060T19P1-1070D^memory^8^length^250
+KFA2 GeForce RTX 4090 HOF 49NXM5MD6PHK^memory^24^length^360

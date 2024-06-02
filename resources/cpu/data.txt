@@ -1,0 +1,2 @@
+Intel Core i5-10400F^socket^LGA1200^coreCount^6^maxTreadCount^12^frequency^2.9^maxFrequency^4.3^memoryType^DDR4^maxMemoryFrequency^2666^tpd^65
+AMD Ryzen 7 7800X3D^socket^AM5^coreCount^8^maxTreadCount^16^frequency^4.2^maxFrequency^5.0^memoryType^DDR5^maxMemoryFrequency^5200^tpd^120
