@@ -159,7 +159,7 @@ namespace PCBuilder {
 		for each (ListViewItem ^ selectedItemFromList in this->componentTypeView->SelectedItems) {
 			selectedItem = selectedItemFromList;
 		}
-		selectedItem->Text;
+		//selectedItem->Text;
 
 		Dictionary<String^, String^>^ parameters = gcnew Dictionary<String^, String^>();
 		PComponent^ cpu = gcnew PComponent("Ryzen rx3600", "Процессор", Image::FromStream(gcnew System::IO::MemoryStream(webClient->DownloadData("https://content.onliner.by/catalog/device/main/c65a08f386c4dbc9d402f629db0a9ff1.jpeg"))), parameters);
