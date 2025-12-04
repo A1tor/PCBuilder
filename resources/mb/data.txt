@@ -1,2 +1,2 @@
-ASRock B560M-HDV R2.0^socket^LGA1200^form^mATX^memory^DDR4
-MSI B650 Gaming Plus WiFi^socket^AM5^form^ATX^memory^DDR5
+ASRock B560M-HDV R2.0^socket^LGA1200^mbForm^1^memory^DDR4
+MSI B650 Gaming Plus WiFi^socket^AM5^mbForm^2^memory^DDR5

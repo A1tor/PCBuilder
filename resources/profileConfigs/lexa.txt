@@ -1,0 +1,1 @@
+mb^ASRock B560M-HDV R2.0^cpu^Intel Core i5-10400F^gpu^Palit GeForce RTX 4060 Dual OC NE64060T19P1-1070D^fan^DeepCool AK400 Digital R-AK400-BKADMN-G^hdd^WD Caviar Blue 1TB (WD10EZEX)^ram^Kingston FURY Beast 16GB DDR4 PC4-25600 KF432C16BB^ps^Montech Titan Gold 1200W^cha^Montech AIR 903 Max

@@ -1,2 +1,7 @@
-Palit GeForce RTX 4060 Dual OC NE64060T19P1-1070D^memory^8^length^250
-KFA2 GeForce RTX 4090 HOF 49NXM5MD6PHK^memory^24^length^360
+Palit GeForce RTX 4060 Dual OC NE64060T19P1-1070D^memory^8^gpuLength^250
+KFA2 GeForce RTX 4090 HOF 49NXM5MD6PHK^memory^24^gpuLength^360
+Palit GeForce GTX 1660 Super GP 6GB GDDR6 NE6166S018J9-1160A-1^memory^6^gpuLength^235
+Gigabyte GeForce RTX 4090 Gaming OC 24G GV-N4090GAMING OC-24GD^memory^24^gpuLength^300
+Palit GeForce RTX 3050 StormX 6GB NE63050018JE-1070F^memory^6^gpuLength^162
+Sapphire Pulse Radeon RX 6600 8GB GDDR6 11310-01-20G^memory^8^gpuLength^193
+Intel Arc A750 Limited Edition 8GB 21P02J00BA^memory^8^gpuLength^280

@@ -1,2 +1,2 @@
-Montech AIR 903 Max^maxMb^3^maxGpu^400^maxCpuFan^180^maxPs^240
-HAFF Bushido^maxMb^1^maxGpu^345^maxCpuFan^160^maxPs^240
+Montech AIR 903 Max^mbForm^3^gpuLength^400^maxCpuFan^180^maxPs^240
+HAFF Bushido^mbForm^1^gpuLength^345^maxCpuFan^160^maxPs^240

@@ -127,17 +127,32 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AdministratorForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AuthorisationWindow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="BuildForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="MainWindow.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="PcBuildChecker.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="PComponent.h" />
     <ClInclude Include="PComponentFactory.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="PcbUser.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AdministratorForm.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="AuthorisationWindow.cpp" />
+    <ClCompile Include="BuildForm.cpp" />
     <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="PcBuildChecker.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -146,6 +161,7 @@
     </ClCompile>
     <ClCompile Include="PComponent.cpp" />
     <ClCompile Include="PComponentFactory.cpp" />
+    <ClCompile Include="PcbUser.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico" />
@@ -166,6 +182,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AdministratorForm.resx">
+      <DependentUpon>AdministratorForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthorisationWindow.resx">
+      <DependentUpon>AuthorisationWindow.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuildForm.resx">
+      <DependentUpon>BuildForm.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.h</DependentUpon>
     </EmbeddedResource>

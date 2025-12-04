@@ -9,16 +9,14 @@ using namespace System::Collections::Generic;
 ref class PComponentFactory
 {
 private:
-    Char delimiter = Char('^');
+    static const Char delimiter = Char('^');
+    static String^ JPEG = ".jpeg";
     String^ generalFilePath;
-    System::Net::WebClient^ webClient;
 	List<PComponent^>^ componentList = gcnew List<PComponent^>();
 public:
-
 	PComponentFactory(String^ dataFilePath, System::Net::WebClient^ webClient)
 	{
         this->generalFilePath = dataFilePath;
-        this->webClient = webClient;
         try
         {
             StreamReader^ reader = File::OpenText(String::Concat(dataFilePath, "data.txt"));
@@ -35,11 +33,34 @@ public:
         }
 	}
 
-    void addFileToComponentList(String^ dataString) {
+    PComponentFactory(String^ dataFilePath)
+    {
+        this->generalFilePath = dataFilePath;
+        try
+        {
+            StreamReader^ reader = File::OpenText(String::Concat(dataFilePath, "data.txt"));
+            String^ line;
+            while ((line = reader->ReadLine()) != nullptr)
+            {
+                addFileToComponentList(line);
+            }
+            reader->Close();
+        }
+        catch (Exception^ e)
+        {
+            throw e;
+        }
+    }
+
+    List<PComponent^>^ getComponentList(){
+        return this->componentList;
+    }
+private:
+    void inline addFileToComponentList(String^ dataString) {
         bool isParameterValue = false;
         int nameEndIndex = dataString->IndexOf(delimiter);
         String^ componentName = dataString->Substring(0, nameEndIndex);
-        String^ parameterName; 
+        String^ parameterName;
         Dictionary<String^, String^>^ componentParameters = gcnew Dictionary<String^, String^>;
 
         for each (String ^ data in dataString->Substring(nameEndIndex + 1)->Split(delimiter)) {
@@ -49,16 +70,17 @@ public:
                 parameterName = data;
             isParameterValue = !isParameterValue;
         }
-        //Image::FromStream(gcnew System::IO::MemoryStream(webClient->
-        //DownloadData("https://content.onliner.by/catalog/device/main/c65a08f386c4dbc9d402f629db0a9ff1.jpeg")))
-        PComponent^ a = gcnew PComponent(componentName,
-            Image::FromFile(String::Concat(generalFilePath, componentName, ".jpeg")),
-            componentParameters);
-        componentList->Add(a);
-    }
 
-    List<PComponent^>^ getComponentList(){
-        return this->componentList;
+        Image^ componentImage;
+        try {
+            componentImage = Image::FromFile(String::Concat(generalFilePath, componentName, JPEG));
+        }
+        catch (Exception^ e) {}
+        PComponent^ newComp = gcnew PComponent(componentName,
+            componentImage,
+            componentParameters);
+
+        componentList->Add(newComp);
     }
 };
 
